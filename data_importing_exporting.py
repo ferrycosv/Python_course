@@ -12,4 +12,11 @@ print("First 10 records \n")
 print(df.head(10))
 print("Last 10 records \n")
 print(df.tail(10))
-df.to_csv("/Users/ferrycosv/PycharmProjects/Python_course/imports-85.csv")
+#df.to_csv("/Users/ferrycosv/PycharmProjects/Python_course/imports-85.csv")
+
+# Data basic statistics quick look
+basic_statistics = df.describe(include="all")
+
+# Top 30 and bottom 30 rows
+print(df.info())
+
